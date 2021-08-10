@@ -34,7 +34,7 @@ ul {
   padding: 0px;
 }
 section {
-  padding: 94px 0px;
+  padding: 0 0 94px 0px;
 }
 img {
   margin: 0px;
@@ -52,6 +52,7 @@ body {
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  padding: 24px 0px;
   text-decoration: none;
   text-align: left;
   color: var(--accent-color);
@@ -71,8 +72,6 @@ body {
 
 .header {
   border-bottom: 1px solid rgba(236, 236, 236, 1);
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 /*header container*/
 .header .container {
@@ -80,9 +79,7 @@ body {
   align-items: baseline;
   justify-content: space-between;
 }
-
 .header {
-  width: 1600px;
   left: 0px;
   top: 0px;
   background: var(--main-color);
@@ -122,6 +119,9 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
+}
+.active-menu {
+  color: var(--accent-color);
 }
 .work-links .contacts {
   font-size: 14px;
@@ -163,6 +163,10 @@ body {
 }
 .address .contacts:hover,
 .address .contacts:focus {
+  color: var(--accent-color);
+}
+.mail .contacts:hover,
+.mail .contacts:focus {
   color: var(--accent-color);
 }
 /*index*/
@@ -264,9 +268,18 @@ body {
 /*Emploees*/
 .section2 {
   background: var(--main-bg-color);
+  padding-top: 94px;
 }
 .employees {
   display: flex;
+}
+.photo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.details {
+  padding: 30px 32px;
 }
 .employees-list:not(:last-child) {
   margin-right: 30px;
@@ -300,6 +313,9 @@ body {
 }
 
 /*Portfolio*/
+.section3 {
+  padding-top: 94px;
+}
 /*Buttons*/
 .buttons_list {
   display: flex;
@@ -324,7 +340,10 @@ body {
   background: var(--main-bg-color);
   cursor: pointer;
 }
-
+.active-button {
+  color: var(--main-color);
+  background: var(--accent-color);
+}
 .button_profile_lists:hover,
 .button_profile_lists:focus {
   color: var(--main-color);
@@ -350,14 +369,17 @@ body {
 }
 .port_img_list {
   display: block;
+  height: auto;
+  max-width: 100%;
 }
 .port_text {
-  padding: 20px 24px;
+  padding: 0 24px 0 24px;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
 }
 .brand {
+  margin-bottom: 4px;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -372,14 +394,13 @@ body {
 }
 /*Footer*/
 .footer {
-  padding-left: 215px;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--alt-bg-color);
   color: var(--main-color);
-  width: 1600px;
   left: 0px;
 }
+
 .adress {
   font-size: 14px;
   margin-top: 20px;
@@ -389,7 +410,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-color);
 }
-.mail {
-  margin-top: 0;
+.mailto {
   margin-bottom: 9px;
 }
