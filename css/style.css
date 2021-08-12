@@ -34,7 +34,7 @@ ul {
   padding: 0px;
 }
 section {
-  padding: 0 0 94px 0px;
+  padding: 94px 0 94px 0px;
 }
 img {
   margin: 0px;
@@ -106,9 +106,11 @@ body {
 .links {
   display: flex;
   margin-left: 93px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .links .list:not(:last-child) {
-  margin-right: 50px;
+  padding-right: 50px;
 }
 .links .work-links .contacts {
   display: block;
@@ -125,12 +127,11 @@ body {
 }
 .work-links .contacts {
   font-size: 14px;
-  margin-right: 50px;
   text-decoration: none;
   text-align: left;
 }
 .work-links .contacts:not(:last-child) {
-  margin-right: 50px;
+  padding-right: 50px;
 }
 .links .work-links:hover,
 .links .work-links:focus {
@@ -141,6 +142,7 @@ body {
   margin-right: 30px;
 }
 .address {
+  display: flex;
   list-style-type: none;
   margin-bottom: 9px;
   font-weight: 500;
@@ -151,8 +153,7 @@ body {
 }
 .contacts {
   list-style-type: none;
-  margin-right: 50px;
-  margin-bottom: 9px;
+  padding-right: 50px;
   font-weight: 500;
   font-style: normal;
   font-size: 14px;
@@ -226,7 +227,6 @@ body {
 .skills_list:not(:last-child) {
   margin-right: 30px;
 }
-
 .skills {
   margin-bottom: 10px;
   font-weight: bold;
@@ -261,11 +261,10 @@ body {
 .services {
   display: flex;
 }
-
 .img_list:not(:last-child) {
   margin-right: 30px;
 }
-/*Emploees*/
+/*Employees*/
 .section2 {
   background: var(--main-bg-color);
   padding-top: 94px;
@@ -284,7 +283,6 @@ body {
 .employees-list:not(:last-child) {
   margin-right: 30px;
 }
-
 .employees-list {
   background-color: var(--main-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -313,9 +311,6 @@ body {
 }
 
 /*Portfolio*/
-.section3 {
-  padding-top: 94px;
-}
 /*Buttons*/
 .buttons_list {
   display: flex;
@@ -351,7 +346,8 @@ body {
 }
 /*Services*/
 .section_services_list {
-  margin: 0px 215px;
+  display: flex;
+  width: 1200px;
 }
 .goods {
   margin: 0;
@@ -360,12 +356,13 @@ body {
   text-decoration: none;
 }
 .port_item {
-  margin: 10px;
+  width: 370px;
+  margin: 15px;
+  flex-basis: calc((100% - 3 * 30px) / 3);
 }
 .services {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: calc((100% - 3 * 30px) / 3);
 }
 .port_img_list {
   display: block;
@@ -373,14 +370,13 @@ body {
   max-width: 100%;
 }
 .port_text {
-  padding: 0 24px 0 24px;
+  padding: 20px 24px;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
 }
 .brand {
   margin-bottom: 4px;
-  font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -400,10 +396,19 @@ body {
   color: var(--main-color);
   left: 0px;
 }
-
+.webstudio-footer {
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  margin-bottom: 24px;
+  text-decoration: none;
+  text-align: left;
+  color: var(--accent-color);
+}
 .adress {
   font-size: 14px;
-  margin-top: 20px;
   margin-bottom: 9px;
   line-height: 1.71;
   font-style: normal;
