@@ -151,9 +151,12 @@ body {
   letter-spacing: 0.02em;
   color: var(--alt-text-color);
 }
+.email {
+    margin-right: 50px;
+}
 .contacts {
   list-style-type: none;
-  padding-right: 50px;
+  padding: 32px 0;
   font-weight: 500;
   font-style: normal;
   font-size: 14px;
@@ -216,8 +219,6 @@ body {
 .description .skills_list {
   display: block;
   margin: 0 auto;
-  padding-top: 25px;
-  padding-bottom: 25px;
 }
 .skills_list {
   background-color: var(--main-color);
@@ -228,6 +229,7 @@ body {
   margin-right: 30px;
 }
 .skills {
+  margin-top: 0;
   margin-bottom: 10px;
   font-weight: bold;
   font-size: 14px;
@@ -247,6 +249,9 @@ body {
 }
 
 /*Чем мы занимаемся*/
+.what_we_are_doing {
+  padding-top: 0;
+}
 .tasks,
 .team {
   margin-top: 0px;
